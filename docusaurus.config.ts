@@ -49,7 +49,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Documentação Integrador',
+      title: 'Página Inicial',
       logo: {
         alt: 'My Site Logo',
         src: 'img/senai (1).png',
@@ -59,7 +59,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentação',
         },
         {to: '/docs/blog', label: 'Blog', position: 'left'},
         {
