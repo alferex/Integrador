@@ -1,0 +1,22 @@
+.qrSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.qrContainer {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--ifm-background-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qrImage {
+  width: 200px;
+  height: 200px;
+  margin: 1rem 0;
+}
