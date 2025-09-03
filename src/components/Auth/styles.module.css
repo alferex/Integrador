@@ -1,0 +1,211 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modalHeader {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: var(--ifm-color-primary);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--ifm-color-secondary);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton:hover {
+  color: var(--ifm-color-primary);
+}
+
+.modalBody {
+  padding: 20px;
+}
+
+.providerButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.providerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.providerButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-primary);
+}
+
+.providerButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.divider span {
+  background: var(--ifm-background-color);
+  padding: 0 15px;
+  color: var(--ifm-color-secondary);
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+}
+
+.inputGroup input {
+  padding: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(37, 194, 160, 0.2);
+}
+
+.message {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: rgb(21, 128, 61);
+}
+
+.message.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: rgb(185, 28, 28);
+}
+
+.submitButton {
+  padding: 12px;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--ifm-color-primary-dark);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.switchMode {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.switchMode p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ifm-color-secondary);
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.linkButton:hover {
+  color: var(--ifm-color-primary-dark);
+}
